@@ -30,6 +30,7 @@ if __name__ == "__main__":
 
     ### input (example)
     rgb_cond = Image.open(args.image)
+    rgb_cond = rgb_cond.resize((512, 512))
 
     if args.text.endswith('.txt'):
         with open(args.text, 'r') as f:
