@@ -47,9 +47,6 @@ def main_process(yaml_data, process_num):
             continue
         content_prompt = one_example["content_prompt"]
         base_name = os.path.basename(img_path).replace(".png", "")
-        if not os.path.exists(img_path):
-            print(f"Image not found: {img_path}")
-            return
         if os.path.exists(f"outputs/{base_name}_time.txt"):
             print(f"Already processed: {base_name}")
             continue
