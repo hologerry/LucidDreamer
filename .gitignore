@@ -210,3 +210,8 @@ results
 outputs
 gradio_cached_examples
 submodules/depth-diff-gaussian-rasterization-min/third_party/glm
+
+images
+outputs
+output
+examples.yaml
